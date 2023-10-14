@@ -1,0 +1,410 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+header {
+    padding-top: 30px;
+}
+
+header .header-top {
+    text-align: center;
+}
+
+header .header-top h1 {
+    padding-top: 10px;
+    margin: 0;
+    font-family: Linux Libertine,Hoefler Text,Georgia,Times New Roman,Times,serif;
+    font-size: 1.7rem;
+    font-weight: lighter;
+    font-weight: 100;
+}
+
+
+header .header-top h1 span {
+    font-size: 2.3rem;
+}
+
+header .header-top p {
+    padding: 0;
+    margin: 0;
+    font-family: Linux Libertine,Georgia,Times,"Source Serif Pro",serif;
+    font-size: 15px;
+}
+
+body .body-conteiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body .body-image {
+    margin-top: 35px;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body .body-image img{
+    width: 200px;
+    height: 185px;
+}
+
+body a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+body .body-right strong {
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Inter,Helvetica,Arial,sans-serif;
+    color: #36c;
+
+}
+
+body .body-right div {
+    width: 156px;
+    height: 45.797px;
+    text-align: center;
+}
+
+body .body-right strong,
+body .body-right small {
+    display: block;
+}
+
+body .body-right small {
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Inter,Helvetica,Arial,sans-serif;
+    color: #54595D;
+}
+
+body .body-right div:hover {
+    background-color: #EAECF0;
+    cursor: pointer;
+}
+
+body .body-right div:hover strong {
+    text-decoration: underline;
+
+}
+
+
+
+body .body-left strong {
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Inter,Helvetica,Arial,sans-serif;
+    color: #36c;
+
+}
+
+body .body-left div {
+    width: 156px;
+    height: 45.797px;
+    text-align: center;
+}
+
+body .body-left strong,
+body .body-left small {
+    display: block;
+}
+
+body .body-left small {
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Inter,Helvetica,Arial,sans-serif;
+    color: #54595D;
+}
+
+body .body-left div:hover {
+    background-color: #EAECF0;
+    cursor: pointer;
+}
+
+body .body-left div:hover strong {
+    text-decoration: underline;
+
+}
+
+
+
+
+body .body-left .body-left-1 {
+    position: absolute;
+    top: 18%;
+    right: 54%;
+}
+
+body .body-left .body-left-2 {
+    position: absolute;
+    top: 27%;
+    right: 57%;
+}
+
+body .body-left .body-left-3 {
+    position: absolute;
+    top: 36%;
+    right: 58%;
+}
+
+body .body-left .body-left-4 {
+    position: absolute;
+    top: 45%;
+    right: 57%;
+}
+
+body .body-left .body-left-5 {
+    position: absolute;
+    top: 53%;
+    right: 53.5%;
+}
+
+body .body-right .body-right-1 {
+    position: absolute;
+    top: 18%;
+    right: 37%;
+}
+
+body .body-right .body-right-2 {
+    position: absolute;
+    top: 27%;
+    right: 33%;
+}
+
+body .body-right .body-right-3 {
+    position: absolute;
+    top: 36%;
+    right: 32%;
+}
+
+body .body-right .body-right-4 {
+    position: absolute;
+    top: 45%;
+    right: 33%;
+}
+
+body .body-right .body-right-5 {
+    position: absolute;
+    top: 53%;
+    right: 38%;
+}
+
+body .main-section-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+body .body-input-conteiner {
+    justify-content: space-around;
+    height: 40px;
+    width: 450px;
+    display: flex;
+    margin-top: 100px;
+    border: 1px solid #72777D;
+    
+}
+
+body .body-input-conteiner input {
+    width: 100%;
+    border: none;
+    padding: 5px;
+    font-size: 20px;
+}
+
+body .body-input-conteiner input:focus {
+    outline: none;
+}
+
+body .body-input-conteiner:focus-within {
+    border: 2px solid #36c;
+}
+
+body .body-input-conteiner #search {
+    background-image: url('../images/buscar.png');
+    background-position: center;
+    height: 40px;
+    width: 60px;
+    border: 2px solid #36c;
+}
+
+.body-input-conteiner > button:first-of-type {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Inter, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    color: #54595d;
+    border: none;
+    background: transparent;
+    width: 60px;
+    margin-right: 5px;
+}
+
+body .body-input-conteiner > button:hover {
+    cursor: pointer;
+}
+
+body .body-input-conteiner-down {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+body .body-input-conteiner-down hr {
+    width: 15%;
+    height: 1px; /* Ajusta el grosor de la línea */
+    border: none;
+    background-color: #ccc; /* Color de la línea */
+    margin-top: 20px;
+}
+
+
+
+body .body-input-conteiner-down button {
+    padding: 10px;
+    color: #36c;
+    font-weight: 800;
+    height: 40px;
+}
+
+
+footer div img {
+    height: 40px;
+    width: 40px;
+}
+
+footer .footer-conteiner {
+    padding-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 50px;
+    border-top: 1px solid #C8CCD1;
+    border-bottom: 1px solid #C8CCD1;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around; /* Ajusta el espacio entre las columnas según sea necesario */
+    flex-wrap: wrap; /* Permite que los divs se envuelvan en varias líneas si el espacio es insuficiente */
+}
+
+footer .footer-conteiner {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer .footer-conteiner > div {
+    flex: 1;
+    margin: 10px; /* Ajusta los márgenes según tus preferencias */
+    box-sizing: border-box; /* Incluye el padding y borde en el ancho y alto del elemento */
+}
+
+.footer-conteiner > div:first-child {
+    flex: 1.7; /* Asigna más espacio al primer div */
+}
+
+footer .footer-conteiner-1 {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 90px;
+    margin-right: 100px;
+    margin-bottom: 35px;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Inter,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    color: #54595d;
+    padding: 10px;
+}
+
+footer .footer-conteiner-1 h4{
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+footer .footer-conteiner-1 a {
+    color: #36c;
+    cursor: pointer;
+}
+
+footer .footer-conteiner-1 a:hover {
+    text-decoration: underline;
+}
+
+footer .footer-conteiner-1 div {
+    margin-left: 10px;
+}
+
+footer .footer-conteiner-1 p {
+    margin: 0;
+}
+
+footer #diferent-color {
+    background-color: #F8F9FA;
+}
+
+footer #footer-download img{
+    margin-top: 15px;
+    width: 110px;
+    height: 35px;
+}
+
+footer .footer-conteiner-section {
+    padding: 15px;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Inter,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    color: #54595d;
+}
+
+footer .footer-conteiner-section img {
+    margin-right: 10px;
+}
+
+footer .footer-conteiner-section span {
+    display: block;
+}
+
+footer .footer-conteiner-section a > span:first-child {
+    color: #36c;
+    cursor: pointer;
+}
+
+footer .footer-conteiner-section:hover {
+    background-color: #EAECF0;
+}
+
+
+footer .footer-conteiner-3 {
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Inter,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    color: #54595d;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .footer-conteiner-3 span, li a {
+    color: #36c;
+}
+
+footer .footer-conteiner-3 ul {
+    display: flex;
+}
+
+footer .footer-conteiner-3 li {
+    margin-right: 25px;
+}
+
+footer .footer-conteiner-3 a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+footer .footer-conteiner-3 span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
