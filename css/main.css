@@ -243,7 +243,6 @@ body .body-input-conteiner {
     height: 40px; /* Establece la altura del contenedor */
     width: 450px; /* Establece el ancho del contenedor */
     display: flex; /* Usa el modelo de caja flexible para el contenedor de entrada */
-    margin-top: 5vw; /* Establece el margen superior del contenedor de entrada */
     border: 1px solid #72777D; /* Establece el borde del contenedor de entrada */
 }
 
