@@ -7,6 +7,11 @@ html, body {
     flex-wrap: wrap; /* Utilizando "flex-wrap" en el contexto de html y body no tiene efecto directo, esto podría necesitar aclaración o estar destinado a un contenedor específico. */
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
 /* Agrega un cursor de puntero al pasar el ratón sobre los botones */
 button:hover {
     cursor: pointer;
@@ -45,17 +50,14 @@ header .header-top p {
     font-size: 15px; /* Define el tamaño de la fuente para el párrafo */
 }
 
-
 /* Estilos para el contenedor principal del cuerpo */
 body .body-conteiner {
-    position: relative;
     display: flex; /* Usa el modelo de caja flexible para el contenedor principal del cuerpo */
     justify-content: center; /* Centra el contenido horizontalmente dentro del contenedor */
     align-items: center; /* Centra el contenido verticalmente dentro del contenedor */
-    max-width: 100vw; /* Establece el ancho máximo del contenedor al 100% del ancho del viewport */
-    max-height: 100vh; /* Establece la altura máxima del contenedor al 100% de la altura del viewport */
     margin-top: 35px;
 }
+
 
 
 /* Estilos para el contenedor de la imagen en el cuerpo */
@@ -114,13 +116,17 @@ body .body-right div:hover strong {
     text-decoration: underline; /* Subraya el texto fuerte al pasar el ratón sobre el elemento */
 }
 
-
-
-
 /* Estilos para el texto fuerte (negrita) en la columna de la izquierda */
 body .body-left strong {
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Inter, Helvetica, Arial, sans-serif; /* Define la fuente */
     color: #36c; /* Establece el color del texto */
+}
+
+body .main-section .main {
+    position: relative;
+    margin: 0 auto; /* Establece un margen izquierdo y derecho automático */
+    width: 546px; 
+    height: 325px;
 }
 
 /* Estilos para los elementos div en la columna de la izquierda */
@@ -164,63 +170,63 @@ body .body-right {
 /* Estilos para los elementos específicos en la columna de la izquierda (body-left-1, body-left-2, etc.) */
 body .body-left .body-left-1 {
     position: absolute;
-    top: 0%; /* Establece la distancia desde la parte superior en relación con el 20% de la altura del viewport */
-    left: 33%; /* Establece la distancia desde la derecha en relación con el 150% de la altura del viewport */
+    top: 1%; 
+    left: 10%; 
 }
 
 body .body-left .body-left-2 {
     position: absolute;
-    top: 25%; /* Establece la distancia desde la parte superior en relación con el 20% de la altura del viewport */
-    left: 30%; /* Establece la distancia desde la derecha en relación con el 150% de la altura del viewport */
+    top: 20%; 
+    left: 2%; 
 }
 
 body .body-left .body-left-3 {
     position: absolute;
-    top: 50%; /* Establece la distancia desde la parte superior en relación con el 20% de la altura del viewport */
-    left: 28%; /* Establece la distancia desde la derecha en relación con el 150% de la altura del viewport */
+    top: 39%; 
+    left: 0%; 
 }
 
 body .body-left .body-left-4 {
     position: absolute;
-    top: 75%; /* Establece la distancia desde la parte superior en relación con el 20% de la altura del viewport */
-    left: 30%; /* Establece la distancia desde la derecha en relación con el 150% de la altura del viewport */
+    top: 58%; 
+    left: 2%; 
 }
 
 body .body-left .body-left-5 {
     position: absolute;
-    top: 100%; /* Establece la distancia desde la parte superior en relación con el 20% de la altura del viewport */
-    left: 33%; /* Establece la distancia desde la derecha en relación con el 150% de la altura del viewport */
+    top: 77%; 
+    left: 10%; 
 }
 
 /* Estilos para los elementos específicos en la columna de la derecha (body-right-1, body-right-2, etc.) */
 body .body-right .body-right-1 {
     position: absolute;
-    top: 0%; /* Establece la distancia desde la parte superior en relación con el 9% de la altura del viewport */
-    right: 33%; /* Establece la distancia desde la derecha en relación con el 33% de la anchura del viewport */
+    top: 1%; 
+    right: 10%; 
 }
 
 body .body-right .body-right-2 {
     position: absolute;
-    top: 25%; /* Establece la distancia desde la parte superior en relación con el 9% de la altura del viewport */
-    right: 30%; /* Establece la distancia desde la derecha en relación con el 33% de la anchura del viewport */
+    top: 20%; 
+    right: 2%; 
 }
 
 body .body-right .body-right-3 {
     position: absolute;
-    top: 50%; /* Establece la distancia desde la parte superior en relación con el 9% de la altura del viewport */
-    right: 28%; /* Establece la distancia desde la derecha en relación con el 33% de la anchura del viewport */
+    top: 39%; 
+    right: 0%; 
 }
 
 body .body-right .body-right-4 {
     position: absolute;
-    top: 75%; /* Establece la distancia desde la parte superior en relación con el 9% de la altura del viewport */
-    right: 30%; /* Establece la distancia desde la derecha en relación con el 33% de la anchura del viewport */
+    top: 58%; 
+    right: 2%; 
 }
 
 body .body-right .body-right-5 {
     position: absolute;
-    top: 100%; /* Establece la distancia desde la parte superior en relación con el 9% de la altura del viewport */
-    right: 33%; /* Establece la distancia desde la derecha en relación con el 33% de la anchura del viewport */
+    top: 77%; 
+    right: 10%; 
 }
 
 /* Estilos para la sección principal 2 */
