@@ -1,428 +1,475 @@
+/* Establece margen y relleno a 0 y el tamaño del cuerpo y html al 100% */
 html, body {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Utilizando "flex-wrap" en el contexto de html y body no tiene efecto directo, esto podría necesitar aclaración o estar destinado a un contenedor específico. */
 }
 
-button:hover{
+/* Agrega un cursor de puntero al pasar el ratón sobre los botones */
+button:hover {
     cursor: pointer;
 }
 
+/* Estilos para la sección de encabezado */
 header {
-    padding-top: 30px;
+    padding-top: 30px; /* Agrega espacio en la parte superior del encabezado */
 }
 
+/* Estilos para la parte superior del encabezado */
 header .header-top {
-    text-align: center;
+    text-align: center; /* Centra el contenido de la parte superior del encabezado */
 }
 
+/* Estilos para el título principal en la parte superior del encabezado */
 header .header-top h1 {
-    padding-top: 10px;
+    padding-top: 10px; /* Agrega espacio en la parte superior del título principal */
     margin: 0;
-    font-family: Linux Libertine,Hoefler Text,Georgia,Times New Roman,Times,serif;
-    font-size: 1.7rem;
-    font-weight: lighter;
-    font-weight: 100;
+    font-family: Linux Libertine, Hoefler Text, Georgia, Times New Roman, Times, serif; /* Define la fuente */
+    font-size: 1.7rem; /* Define el tamaño de la fuente */
+    font-weight: lighter; /* Establece el peso de la fuente, pero la propiedad se está sobrescribiendo en la línea siguiente */
+    font-weight: 100; /* Puede ser redundante, ya que la línea anterior sobrescribe el valor */
 }
 
-
+/* Estilos para una parte específica dentro del título principal */
 header .header-top h1 span {
-    font-size: 2.3rem;
+    font-size: 2.3rem; /* Define el tamaño de la fuente para el elemento span dentro del título principal */
 }
 
+/* Estilos para el párrafo dentro de la parte superior del encabezado */
 header .header-top p {
     padding: 0;
     margin: 0;
-    font-family: Linux Libertine,Georgia,Times,"Source Serif Pro",serif;
-    font-size: 15px;
+    font-family: Linux Libertine, Georgia, Times, "Source Serif Pro", serif; /* Define la fuente para el párrafo */
+    font-size: 15px; /* Define el tamaño de la fuente para el párrafo */
 }
 
+
+/* Estilos para el contenedor principal del cuerpo */
 body .body-conteiner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
-    max-height: 100%;
+    position: relative;
+    display: flex; /* Usa el modelo de caja flexible para el contenedor principal del cuerpo */
+    justify-content: center; /* Centra el contenido horizontalmente dentro del contenedor */
+    align-items: center; /* Centra el contenido verticalmente dentro del contenedor */
+    max-width: 100vw; /* Establece el ancho máximo del contenedor al 100% del ancho del viewport */
+    max-height: 100vh; /* Establece la altura máxima del contenedor al 100% de la altura del viewport */
+    margin-top: 35px;
 }
 
+
+/* Estilos para el contenedor de la imagen en el cuerpo */
 body .body-image {
-    margin-top: 10vh; 
-    padding-top: 5vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-top: 10vh; /* Margen superior en relación con el 10% de la altura del viewport */
+    display: flex; /* Usa el modelo de caja flexible para el contenedor de la imagen */
+    justify-content: center; /* Centra el contenido horizontalmente dentro del contenedor */
+    align-items: center; /* Centra el contenido verticalmente dentro del contenedor */
 }
 
-body .body-image img{
-    width: 200px;
-    height: 185px;
+/* Estilos para la imagen dentro del contenedor */
+body .body-image img {
+    width: 190px; /* Establece el ancho de la imagen */
+    height: 180px; /* Establece la altura de la imagen */
 }
 
+/* Estilos generales para los enlaces */
 body a {
-    text-decoration: none;
-    color: inherit;
+    text-decoration: none; /* Elimina la decoración de subrayado de los enlaces */
+    color: inherit; /* Hereda el color del texto del elemento padre */
 }
 
-
-
+/* Estilos para texto fuerte (negrita) en la columna de la derecha */
 body .body-right strong {
-    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Inter,Helvetica,Arial,sans-serif;
-    color: #36c;
-
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Inter, Helvetica, Arial, sans-serif; /* Define la fuente */
+    color: #36c; /* Establece el color del texto */
 }
 
+/* Estilos para los elementos div en la columna de la derecha */
 body .body-right div {
-    width: 156px;
-    height: 45.797px;
-    text-align: center;
+    width: 156px; /* Establece el ancho del elemento div */
+    height: 45.797px; /* Establece la altura del elemento div */
+    text-align: center; /* Centra el contenido del elemento div */
 }
 
+/* Hace que los elementos fuertes (strong) y pequeños (small) en la columna de la derecha sean elementos de bloque */
 body .body-right strong,
 body .body-right small {
     display: block;
 }
 
+/* Estilos para texto pequeño en la columna de la derecha */
 body .body-right small {
-    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Inter,Helvetica,Arial,sans-serif;
-    color: #54595D;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Inter, Helvetica, Arial, sans-serif; /* Define la fuente */
+    color: #54595D; /* Establece el color del texto */
 }
 
+/* Estilos para el elemento div en la columna de la derecha al pasar el ratón sobre él */
 body .body-right div:hover {
-    background-color: #EAECF0;
-    cursor: pointer;
+    background-color: #EAECF0; /* Cambia el color de fondo al pasar el ratón sobre el elemento */
+    cursor: pointer; /* Cambia el cursor al estilo de puntero al pasar el ratón sobre el elemento */
 }
 
+/* Estilos para el texto fuerte (strong) dentro del elemento div al pasar el ratón sobre él */
 body .body-right div:hover strong {
-    text-decoration: underline;
-
+    text-decoration: underline; /* Subraya el texto fuerte al pasar el ratón sobre el elemento */
 }
 
 
 
+
+/* Estilos para el texto fuerte (negrita) en la columna de la izquierda */
 body .body-left strong {
-    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Inter,Helvetica,Arial,sans-serif;
-    color: #36c;
-
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Inter, Helvetica, Arial, sans-serif; /* Define la fuente */
+    color: #36c; /* Establece el color del texto */
 }
 
+/* Estilos para los elementos div en la columna de la izquierda */
 body .body-left div {
-    width: 156px;
-    height: 45.797px;
-    text-align: center;
+    width: 156px; /* Establece el ancho del elemento div */
+    height: 45.797px; /* Establece la altura del elemento div */
+    text-align: center; /* Centra el contenido del elemento div */
 }
 
+/* Hace que los elementos fuertes (strong) y pequeños (small) en la columna de la izquierda sean elementos de bloque */
 body .body-left strong,
 body .body-left small {
     display: block;
 }
 
+/* Estilos para texto pequeño en la columna de la izquierda */
 body .body-left small {
-    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Inter,Helvetica,Arial,sans-serif;
-    color: #54595D;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Inter, Helvetica, Arial, sans-serif; /* Define la fuente */
+    color: #54595D; /* Establece el color del texto */
 }
 
+/* Estilos para el elemento div en la columna de la izquierda al pasar el ratón sobre él */
 body .body-left div:hover {
-    background-color: #EAECF0;
-    cursor: pointer;
+    background-color: #EAECF0; /* Cambia el color de fondo al pasar el ratón sobre el elemento */
+    cursor: pointer; /* Cambia el cursor al estilo de puntero al pasar el ratón sobre el elemento */
 }
 
+/* Estilos para el texto fuerte (strong) dentro del elemento div al pasar el ratón sobre él */
 body .body-left div:hover strong {
-    text-decoration: underline;
-
+    text-decoration: underline; /* Subraya el texto fuerte al pasar el ratón sobre el elemento */
 }
 
+/* Estilos generales para los contenedores de la izquierda y la derecha */
 body .body-left,
 body .body-right {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: flex; /* Usa el modelo de caja flexible para los contenedores de la izquierda y la derecha */
+    flex-direction: column; /* Define la dirección de la disposición como columna */
+    align-items: center; /* Centra el contenido verticalmente dentro de los contenedores */
 }
 
-
+/* Estilos para los elementos específicos en la columna de la izquierda (body-left-1, body-left-2, etc.) */
 body .body-left .body-left-1 {
-    margin-top: 5vh;
     position: absolute;
-    top: 9vw;
-    right: 55vw;
+    top: 0%; /* Establece la distancia desde la parte superior en relación con el 20% de la altura del viewport */
+    left: 33%; /* Establece la distancia desde la derecha en relación con el 150% de la altura del viewport */
 }
 
 body .body-left .body-left-2 {
-    margin-top: 5vh;
     position: absolute;
-    top: 13vw;
-    right: 58vw;
+    top: 25%; /* Establece la distancia desde la parte superior en relación con el 20% de la altura del viewport */
+    left: 30%; /* Establece la distancia desde la derecha en relación con el 150% de la altura del viewport */
 }
 
 body .body-left .body-left-3 {
-    margin-top: 5vh;
     position: absolute;
-    top: 17vw;
-    right: 59vw;
+    top: 50%; /* Establece la distancia desde la parte superior en relación con el 20% de la altura del viewport */
+    left: 28%; /* Establece la distancia desde la derecha en relación con el 150% de la altura del viewport */
 }
 
 body .body-left .body-left-4 {
-    margin-top: 5vh;
     position: absolute;
-    top: 21vw;
-    right: 58vw;
+    top: 75%; /* Establece la distancia desde la parte superior en relación con el 20% de la altura del viewport */
+    left: 30%; /* Establece la distancia desde la derecha en relación con el 150% de la altura del viewport */
 }
 
 body .body-left .body-left-5 {
-    margin-top: 5vh;
     position: absolute;
-    top: 25vw;
-    right: 54vw;
+    top: 100%; /* Establece la distancia desde la parte superior en relación con el 20% de la altura del viewport */
+    left: 33%; /* Establece la distancia desde la derecha en relación con el 150% de la altura del viewport */
 }
 
+/* Estilos para los elementos específicos en la columna de la derecha (body-right-1, body-right-2, etc.) */
 body .body-right .body-right-1 {
-    margin-top: 5vh;
     position: absolute;
-    top: 9vw;
-    right: 33vw;
+    top: 0%; /* Establece la distancia desde la parte superior en relación con el 9% de la altura del viewport */
+    right: 33%; /* Establece la distancia desde la derecha en relación con el 33% de la anchura del viewport */
 }
 
 body .body-right .body-right-2 {
-    margin-top: 5vh;
     position: absolute;
-    top: 13vw;
-    right: 30vw;
+    top: 25%; /* Establece la distancia desde la parte superior en relación con el 9% de la altura del viewport */
+    right: 30%; /* Establece la distancia desde la derecha en relación con el 33% de la anchura del viewport */
 }
 
 body .body-right .body-right-3 {
-    margin-top: 5vh;
     position: absolute;
-    top: 17vw;
-    right: 29vw;
+    top: 50%; /* Establece la distancia desde la parte superior en relación con el 9% de la altura del viewport */
+    right: 28%; /* Establece la distancia desde la derecha en relación con el 33% de la anchura del viewport */
 }
 
 body .body-right .body-right-4 {
-    margin-top: 5vh;
     position: absolute;
-    top: 21vw;
-    right: 30vw;
+    top: 75%; /* Establece la distancia desde la parte superior en relación con el 9% de la altura del viewport */
+    right: 30%; /* Establece la distancia desde la derecha en relación con el 33% de la anchura del viewport */
 }
 
 body .body-right .body-right-5 {
-    margin-top: 5vh;
     position: absolute;
-    top: 25vw;
-    right: 33vw;
+    top: 100%; /* Establece la distancia desde la parte superior en relación con el 9% de la altura del viewport */
+    right: 33%; /* Establece la distancia desde la derecha en relación con el 33% de la anchura del viewport */
 }
 
+/* Estilos para la sección principal 2 */
 body .main-section-2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    display: flex; /* Usa el modelo de caja flexible para la sección principal 2 */
+    flex-direction: column; /* Define la dirección de la disposición como columna */
+    align-items: center; /* Centra el contenido verticalmente dentro de la sección principal 2 */
+    justify-content: center; /* Centra el contenido horizontal y verticalmente dentro de la sección principal 2 */
 }
 
+/* Estilos para el contenedor de entrada en el cuerpo */
 body .body-input-conteiner {
-    justify-content: space-around;
-    height: 40px;
-    width: 450px;
-    display: flex;
-    margin-top: 100px;
-    border: 1px solid #72777D;
-    
+    justify-content: space-around; /* Distribuye uniformemente el espacio alrededor de los elementos hijos */
+    height: 40px; /* Establece la altura del contenedor */
+    width: 450px; /* Establece el ancho del contenedor */
+    display: flex; /* Usa el modelo de caja flexible para el contenedor de entrada */
+    margin-top: 5vw; /* Establece el margen superior del contenedor de entrada */
+    border: 1px solid #72777D; /* Establece el borde del contenedor de entrada */
 }
 
+
+/* Estilos para el campo de entrada en el cuerpo */
 body .body-input-conteiner input {
-    width: 100%;
-    border: none;
-    padding: 5px;
-    font-size: 20px;
+    width: 100%; /* Ocupa el 100% del ancho del contenedor */
+    border: none; /* Elimina el borde del campo de entrada */
+    padding: 5px; /* Agrega un espacio interno de 5px alrededor del contenido del campo de entrada */
+    font-size: 20px; /* Establece el tamaño del texto en 20px */
 }
 
+/* Estilos para el campo de entrada en el cuerpo cuando está enfocado */
 body .body-input-conteiner input:focus {
-    outline: none;
+    outline: none; /* Elimina el contorno predeterminado al enfocar el campo de entrada */
 }
 
+/* Estilos para el contenedor de entrada en el cuerpo cuando está enfocado */
 body .body-input-conteiner:focus-within {
-    border: 2px solid #36c;
+    border: 2px solid #36c; /* Agrega un borde de 2px sólido al contenedor cuando está enfocado */
 }
 
+/* Estilos para el botón de búsqueda dentro del contenedor de entrada en el cuerpo */
 body .body-input-conteiner #search {
-    background-image: url('../images/buscar.png');
-    background-position: center;
-    height: 40px;
-    width: 60px;
-    border: 2px solid #36c;
+    background-image: url('../images/buscar.png'); /* Establece una imagen de fondo para el botón de búsqueda */
+    background-position: center; /* Centra la imagen de fondo */
+    height: 40px; /* Establece la altura del botón de búsqueda */
+    width: 60px; /* Establece el ancho del botón de búsqueda */
+    border: 2px solid #36c; /* Agrega un borde de 2px sólido al botón de búsqueda */
 }
 
+/* Estilos para el primer botón dentro del contenedor de entrada en el cuerpo */
 .body-input-conteiner > button:first-of-type {
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Inter, Helvetica, Arial, sans-serif;
-    font-size: 13px;
-    color: #54595d;
-    border: none;
-    background: transparent;
-    width: 60px;
-    margin-right: 5px;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Inter, Helvetica, Arial, sans-serif; /* Define la fuente */
+    font-size: 13px; /* Establece el tamaño del texto en 13px */
+    color: #54595d; /* Establece el color del texto */
+    border: none; /* Elimina el borde del botón */
+    background: transparent; /* Establece el fondo transparente */
+    width: 60px; /* Establece el ancho del botón */
+    margin-right: 5px; /* Establece el margen derecho del botón */
 }
 
+/* Estilos para el primer botón dentro del contenedor de entrada en el cuerpo al pasar el ratón sobre él */
 body .body-input-conteiner > button:hover {
-    cursor: pointer;
+    cursor: pointer; /* Cambia el cursor al estilo de puntero al pasar el ratón sobre el botón */
 }
 
+/* Estilos para el contenedor inferior del campo de entrada en el cuerpo */
 body .body-input-conteiner-down {
-    width: 500px;
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
+    width: 500px; /* Establece el ancho del contenedor inferior */
+    display: flex; /* Usa el modelo de caja flexible para el contenedor inferior */
+    justify-content: center; /* Centra el contenido horizontalmente dentro del contenedor inferior */
+    margin-top: 20px; /* Establece el margen superior del contenedor inferior */
 }
 
+/* Estilos para la línea horizontal dentro del contenedor inferior */
 body .body-input-conteiner-down hr {
-    width: 15%;
+    width: 15%; /* Establece el ancho de la línea horizontal en relación con el contenedor */
     height: 1px; /* Ajusta el grosor de la línea */
-    border: none;
-    background-color: #ccc; /* Color de la línea */
-    margin-top: 20px;
+    border: none; /* Elimina el borde de la línea horizontal */
+    background-color: #ccc; /* Establece el color de la línea horizontal */
+    margin-top: 20px; /* Establece el margen superior de la línea horizontal */
 }
 
-
-
+/* Estilos para los botones dentro del contenedor inferior */
 body .body-input-conteiner-down button {
-    padding: 10px;
-    color: #36c;
-    font-weight: 800;
-    height: 40px;
+    padding: 10px; /* Añade un espacio interno de 10px alrededor del contenido del botón */
+    color: #36c; /* Establece el color del texto del botón */
+    font-weight: 800; /* Establece el grosor de la fuente del botón */
+    height: 40px; /* Establece la altura del botón */
 }
 
-
+/* Estilos para las imágenes dentro de los elementos div en el pie de página */
 footer div img {
-    height: 40px;
-    width: 40px;
+    height: 40px; /* Establece la altura de las imágenes en el pie de página */
+    width: 40px; /* Establece el ancho de las imágenes en el pie de página */
 }
 
+/* Estilos para el contenedor del pie de página */
 footer .footer-conteiner {
-    padding-top: 30px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 50px;
-    border-top: 1px solid #C8CCD1;
-    border-bottom: 1px solid #C8CCD1;
+    padding-top: 30px; /* Establece el relleno superior del contenedor del pie de página */
+    margin-left: 10px; /* Establece el margen izquierdo del contenedor del pie de página */
+    margin-right: 10px; /* Establece el margen derecho del contenedor del pie de página */
+    margin-top: 50px; /* Establece el margen superior del contenedor del pie de página */
+    border-top: 1px solid #C8CCD1; /* Agrega un borde superior de 1px sólido al contenedor del pie de página */
+    border-bottom: 1px solid #C8CCD1; /* Agrega un borde inferior de 1px sólido al contenedor del pie de página */
 }
 
+/* Estilos generales para el pie de página */
 footer {
-    display: flex;
+    display: flex; /* Usa el modelo de caja flexible para el pie de página */
     justify-content: space-around; /* Ajusta el espacio entre las columnas según sea necesario */
     flex-wrap: wrap; /* Permite que los divs se envuelvan en varias líneas si el espacio es insuficiente */
 }
 
+/* Estilos para el contenedor del pie de página con envoltura flexible */
 footer .footer-conteiner {
-    display: flex;
-    flex-wrap: wrap;
+    display: flex; /* Usa el modelo de caja flexible para el contenedor del pie de página con envoltura flexible */
+    flex-wrap: wrap; /* Permite que los divs se envuelvan en varias líneas si el espacio es insuficiente */
 }
 
+
+/* Estilos generales para los elementos div dentro del contenedor de pie de página */
 footer .footer-conteiner > div {
-    flex: 1;
-    margin: 10px; /* Ajusta los márgenes según tus preferencias */
+    flex: 1; /* Distribuye el espacio de manera uniforme entre los elementos div dentro del contenedor */
+    margin: 10px; /* Agrega márgenes de 10px a todos los lados de cada div */
     box-sizing: border-box; /* Incluye el padding y borde en el ancho y alto del elemento */
 }
 
+/* Estilos para el primer div dentro del contenedor de pie de página */
 .footer-conteiner > div:first-child {
-    flex: 1.7; /* Asigna más espacio al primer div */
+    flex: 1.7; /* Asigna más espacio al primer div para ajustar el diseño */
 }
 
+/* Estilos para el contenedor 1 dentro del pie de página */
 footer .footer-conteiner-1 {
-    display: flex;
-    align-items: flex-start;
-    margin-left: 90px;
-    margin-right: 2vw;
-    margin-bottom: 35px;
-    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Inter,Helvetica,Arial,sans-serif;
-    font-size: 14px;
-    color: #54595d;
-    padding: 10px;
+    display: flex; /* Usa el modelo de caja flexible para el contenedor 1 */
+    align-items: flex-start; /* Alinea los elementos al inicio del eje transversal */
+    margin-left: 90px; /* Establece el margen izquierdo del contenedor 1 */
+    margin-right: 2vw; /* Establece el margen derecho del contenedor 1 como un porcentaje del ancho de la ventana */
+    margin-bottom: 35px; /* Establece el margen inferior del contenedor 1 */
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Inter, Helvetica, Arial, sans-serif; /* Define la fuente del texto en el contenedor 1 */
+    font-size: 14px; /* Establece el tamaño del texto en 14px */
+    color: #54595d; /* Establece el color del texto en el contenedor 1 */
+    padding: 10px; /* Agrega un espacio interno de 10px alrededor del contenido del contenedor 1 */
 }
 
-footer .footer-conteiner-1 h4{
-    margin: 0;
-    margin-bottom: 15px;
+/* Estilos para el título h4 dentro del contenedor 1 del pie de página */
+footer .footer-conteiner-1 h4 {
+    margin: 0; /* Establece el margen superior e inferior del título en 0 */
+    margin-bottom: 15px; /* Establece un margen inferior adicional para separar el título del contenido */
 }
 
+/* Estilos para los enlaces dentro del contenedor 1 del pie de página */
 footer .footer-conteiner-1 a {
-    color: #36c;
-    cursor: pointer;
+    color: #36c; /* Establece el color del texto de los enlaces */
+    cursor: pointer; /* Cambia el cursor al estilo de puntero al pasar el ratón sobre los enlaces */
 }
 
+/* Estilos para los enlaces dentro del contenedor 1 del pie de página al pasar el ratón sobre ellos */
 footer .footer-conteiner-1 a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Subraya los enlaces al pasar el ratón sobre ellos */
 }
 
+/* Estilos para los elementos div dentro del contenedor 1 del pie de página */
 footer .footer-conteiner-1 div {
-    margin-left: 10px;
+    margin-left: 10px; /* Establece el margen izquierdo de los elementos div dentro del contenedor 1 */
 }
 
+/* Estilos para los párrafos dentro del contenedor 1 del pie de página */
 footer .footer-conteiner-1 p {
-    margin: 0;
+    margin: 0; /* Establece el margen superior e inferior de los párrafos en 0 */
 }
 
+/* Estilos para un elemento específico con el ID 'diferent-color' dentro del pie de página */
 footer #diferent-color {
-    background-color: #F8F9FA;
+    background-color: #F8F9FA; /* Establece un color de fondo diferente para este elemento */
 }
 
-footer #footer-download img{
-    margin-top: 15px;
-    width: 110px;
-    height: 35px;
+/* Estilos para la sección del pie de página con descarga */
+footer #footer-download img {
+    margin-top: 15px; /* Establece un margen superior para la imagen dentro de la sección de descarga del pie de página */
+    width: 110px; /* Establece el ancho de la imagen */
+    height: 35px; /* Establece la altura de la imagen */
 }
 
+/* Estilos generales para la sección del pie de página */
 footer .footer-conteiner-section {
-    padding: 15px;
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 30px;
-    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Inter,Helvetica,Arial,sans-serif;
-    font-size: 14px;
-    color: #54595d;
+    padding: 15px; /* Agrega un espacio interno de 15px alrededor del contenido de la sección del pie de página */
+    display: flex; /* Usa el modelo de caja flexible para la sección del pie de página */
+    align-items: flex-start; /* Alinea los elementos al inicio del eje transversal en la sección del pie de página */
+    margin-bottom: 30px; /* Establece el margen inferior de la sección del pie de página */
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Inter, Helvetica, Arial, sans-serif; /* Define la fuente del texto en la sección del pie de página */
+    font-size: 14px; /* Establece el tamaño del texto en 14px */
+    color: #54595d; /* Establece el color del texto en la sección del pie de página */
+    cursor: pointer;
 }
 
+/* Estilos para las imágenes dentro de la sección del pie de página */
 footer .footer-conteiner-section img {
-    margin-right: 10px;
+    margin-right: 10px; /* Establece el margen derecho para las imágenes dentro de la sección del pie de página */
 }
 
+/* Estilos para los elementos span dentro de la sección del pie de página */
 footer .footer-conteiner-section span {
-    display: block;
+    display: block; /* Convierte los elementos span en bloques */
 }
 
+/* Estilos para el primer elemento span dentro de los enlaces dentro de la sección del pie de página */
 footer .footer-conteiner-section a > span:first-child {
-    color: #36c;
-    cursor: pointer;
+    color: #36c; /* Establece el color del texto del primer elemento span dentro de los enlaces en la sección del pie de página */
+    cursor: pointer; /* Cambia el cursor al estilo de puntero al pasar el ratón sobre el primer elemento span dentro de los enlaces */
 }
 
+/* Estilos para la sección del pie de página al pasar el ratón sobre ella */
 footer .footer-conteiner-section:hover {
-    background-color: #EAECF0;
+    background-color: #EAECF0; /* Cambia el color de fondo al pasar el ratón sobre la sección del pie de página */
 }
 
-
+/* Estilos para el contenedor 3 dentro del pie de página */
 footer .footer-conteiner-3 {
-    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Inter,Helvetica,Arial,sans-serif;
-    font-size: 14px;
-    color: #54595d;
-    display: flex;
-    justify-content: space-around;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Inter, Helvetica, Arial, sans-serif; /* Define la fuente del texto en el contenedor 3 */
+    font-size: 14px; /* Establece el tamaño del texto en 14px */
+    color: #54595d; /* Establece el color del texto en el contenedor 3 */
+    display: flex; /* Usa el modelo de caja flexible para el contenedor 3 */
+    justify-content: space-around; /* Distribuye el espacio uniformemente alrededor de los elementos en el contenedor 3 */
+    cursor: pointer;
 }
 
+/* Estilos para los elementos span y los enlaces dentro de la lista dentro del contenedor 3 del pie de página */
 footer .footer-conteiner-3 span, li a {
-    color: #36c;
+    color: #36c; /* Establece el color del texto de los elementos span y enlaces en el contenedor 3 */
 }
 
+/* Estilos para la lista dentro del contenedor 3 del pie de página */
 footer .footer-conteiner-3 ul {
-    display: flex;
+    display: flex; /* Usa el modelo de caja flexible para la lista dentro del contenedor 3 */
 }
 
+/* Estilos para los elementos li dentro de la lista dentro del contenedor 3 del pie de página */
 footer .footer-conteiner-3 li {
-    margin-right: 25px;
+    margin-right: 25px; /* Establece un margen derecho de 25px entre los elementos li de la lista en el contenedor 3 */
 }
 
+/* Estilos para los enlaces dentro del contenedor 3 del pie de página al pasar el ratón sobre ellos */
 footer .footer-conteiner-3 a:hover {
-    text-decoration: underline;
-    cursor: pointer;
+    text-decoration: underline; /* Subraya los enlaces al pasar el ratón sobre ellos en el contenedor 3 */
+    cursor: pointer; /* Cambia el cursor al estilo de puntero al pasar el ratón sobre los enlaces en el contenedor 3 */
 }
 
+/* Estilos para los elementos span dentro del contenedor 3 del pie de página al pasar el ratón sobre ellos */
 footer .footer-conteiner-3 span:hover {
-    text-decoration: underline;
-    cursor: pointer;
+    text-decoration: underline; /* Subraya los elementos span al pasar el ratón sobre ellos en el contenedor 3 */
+    cursor: pointer; /* Cambia el cursor al estilo de puntero al pasar el ratón sobre los elementos span en el contenedor 3 */
 }
