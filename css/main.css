@@ -62,7 +62,7 @@ body .body-conteiner {
 
 /* Estilos para el contenedor de la imagen en el cuerpo */
 body .body-image {
-    margin-top: 10vh; /* Margen superior en relación con el 10% de la altura del viewport */
+    margin-top: 55px;
     display: flex; /* Usa el modelo de caja flexible para el contenedor de la imagen */
     justify-content: center; /* Centra el contenido horizontalmente dentro del contenedor */
     align-items: center; /* Centra el contenido verticalmente dentro del contenedor */
