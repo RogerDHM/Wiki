@@ -3,6 +3,7 @@ html, body {
     padding: 0;
     width: 100%;
     height: 100%;
+    flex-wrap: wrap;
 }
 
 button:hover{
@@ -45,8 +46,8 @@ body .body-conteiner {
 }
 
 body .body-image {
-    margin-top: 35px;
-    padding-top: 50px;
+    margin-top: 5vh; 
+    padding-top: 5vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -130,67 +131,72 @@ body .body-left div:hover strong {
 
 }
 
-
+body .body-left,
+body .body-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 
 body .body-left .body-left-1 {
     position: absolute;
     top: 18%;
-    right: 54%;
+    right: 55vw;
 }
 
 body .body-left .body-left-2 {
     position: absolute;
     top: 27%;
-    right: 57%;
+    right: 58vw;
 }
 
 body .body-left .body-left-3 {
     position: absolute;
     top: 36%;
-    right: 58%;
+    right: 59vw;
 }
 
 body .body-left .body-left-4 {
     position: absolute;
     top: 45%;
-    right: 57%;
+    right: 58vw;
 }
 
 body .body-left .body-left-5 {
     position: absolute;
     top: 53%;
-    right: 53.5%;
+    right: 54vw;
 }
 
 body .body-right .body-right-1 {
     position: absolute;
     top: 18%;
-    right: 37%;
+    right: 33vw;
 }
 
 body .body-right .body-right-2 {
     position: absolute;
     top: 27%;
-    right: 33%;
+    right: 30vw;
 }
 
 body .body-right .body-right-3 {
     position: absolute;
     top: 36%;
-    right: 32%;
+    right: 29vw;
 }
 
 body .body-right .body-right-4 {
     position: absolute;
     top: 45%;
-    right: 33%;
+    right: 30vw;
 }
 
 body .body-right .body-right-5 {
     position: absolute;
     top: 53%;
-    right: 38%;
+    right: 33vw;
 }
 
 body .main-section-2 {
@@ -311,7 +317,7 @@ footer .footer-conteiner-1 {
     display: flex;
     align-items: flex-start;
     margin-left: 90px;
-    margin-right: 100px;
+    margin-right: 2vw;
     margin-bottom: 35px;
     font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Inter,Helvetica,Arial,sans-serif;
     font-size: 14px;
